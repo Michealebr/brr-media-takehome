@@ -10,7 +10,7 @@ import Home from "../assets/house.svg";
 
 const Navbar = () => {
   return (
-    <div className="flex flex-col w-[300px] bg-[var(--secondary-color)] h-screen m-4 border-radius rounded-lg gap-[10rem] ">
+    <div className="flex flex-col w-[300px] bg-[var(--secondary-color)] m-4 border-radius rounded-lg gap-[10rem] ">
         {/* profile */}
       <div className="flex p-5 items-center">
         <img
@@ -23,11 +23,11 @@ const Navbar = () => {
       {/* ctn for links and admin change */}
       <div className="px-6 flex flex-col gap-[10rem]">
         <div className="flex flex-col gap-y-8 text-sm">
-          <Link to="" className="flex items-center ">
+          <Link to="/" className="flex items-center ">
             <img className="mr-4 h-[18px] " src={Home} alt="home icon" />
             Home
           </Link>
-          <Link to="" className="flex items-center">
+          <Link to="/staff" className="flex items-center">
             <img className="mr-4 h-[18px]" src={Staff} alt="home icon" />
             Staff
           </Link>

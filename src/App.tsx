@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 
 import "./App.css";
+import Staff from "./pages/Staff";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
         <main className="flex-1 p-10">
           <Routes>
             <Route path="/" element={<Home />}></Route>
+          </Routes>
+          <Routes>
+            <Route path="/staff" element={<Staff />}></Route>
           </Routes>
         </main>
       </div>
