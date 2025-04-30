@@ -33,7 +33,7 @@ const StaffCardComponent: React.FC<StaffProps> = ({ id, name, role, email, statu
   const statusColor = statusColorMap[status.toLowerCase()] || "bg-gray-400";
 
   return (
-    <div className="bg-[var(--secondary-color)] w-[300px]  rounded-xl px-5 py-3 text-sm relative" key={id}>
+    <div className="bg-[var(--secondary-color)] w-[300px]  rounded-xl px-5 py-3 text-sm relative shadow" key={id} >
       <div className=" flex pb-2  items-center">
         <div className="w-[60px]">
           <img className="h-[50px]" src={Mo} alt="staff profile picture" />
