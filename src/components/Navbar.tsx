@@ -10,7 +10,7 @@ import Home from "../assets/house.svg";
 
 const Navbar = () => {
   return (
-    <div className="flex flex-col w-[300px] bg-[var(--secondary-color)] m-4 border-radius rounded-lg gap-[10rem] ">
+    <div className="flex flex-col w-[300px] bg-[var(--secondary-color)] m-4 border-radius rounded-lg gap-[10rem] fixed top-1 bottom-1">
         {/* profile */}
       <div className="flex p-5 items-center">
         <img
