@@ -19,5 +19,25 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+}
+/* For Chrome, Edge, and Safari */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 6px;
+}
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
 }
 
+/* Firefox */
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #a2a2a2 var(--secondary-color);
+}
