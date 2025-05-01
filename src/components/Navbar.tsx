@@ -31,16 +31,16 @@ const Navbar = () => {
             <img className="mr-4 h-[18px]" src={Staff} alt="home icon" />
             Staff
           </Link>
-          <Link to="" className="flex items-center">
+          <Link to="/create-ticket" className="flex items-center">
             <img className="mr-4 h-[18px]" src={CreateTicket} alt="home icon" />
             Create Ticket
           </Link>
-          <Link to="" className="flex items-center">
+          <Link to="ticket-page" className="flex items-center">
             <img className="mr-4 h-[18px]" src={Tickets} alt="home icon" />
             {/* conditionally render Ticket History or Tickets for admin */}
             Tickets Page 
           </Link>
-          <Link to="" className="flex items-center">
+          <Link to="to-do-list" className="flex items-center">
             <img className="mr-4 h-[18px]" src={Todo} alt="home icon" />
             To-Do List
           </Link>
