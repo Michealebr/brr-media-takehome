@@ -1,7 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'CalSans';
+  src: url('/fonts/CalSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@theme{
+  --font-title: "CalSans", "serif"
+}
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family:   Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -9,17 +18,16 @@
   color: var(--text-color);
   background-color: var(--primary-color);
 
-  --primary-color: #FAFAFA; 
-  --secondary-color: #F5F5F5; 
-  --accent-color: #FE5A30; 
-  --text-color: #222222; 
-  --secondary-text-color: #fff; 
+  --primary-color: #fafafa;
+  --secondary-color: #f5f5f5;
+  --accent-color: #fe5a30;
+  --text-color: #222222;
+  --secondary-text-color: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 /* For Chrome, Edge, and Safari */
 .scrollbar-custom::-webkit-scrollbar {

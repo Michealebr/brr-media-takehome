@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "Update Chrome",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Finish project report",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Call the plumber",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "title": "Buy groceries",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "title": "Clean the kitchen",
+      "completed": true
+    },
+    {
+      "id": 6,
+      "title": "Book doctor appointment",
+      "completed": false
+    },
+    {
+      "id": 7,
+      "title": "Read 10 pages of a book",
+      "completed": false
+    }
+  ]
+  
