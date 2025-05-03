@@ -14,7 +14,7 @@ function App() {
     <>
       <div className="flex h-screen">
         <Navbar />
-        <main className=" lg:ml-80 mt-5 lg:mt-0 flex-1 p-[30px] lg:p-10">
+        <main className=" lg:ml-80 mt-5 lg:mt-0 flex-1 p-[30px] lg:p-10 overflow-x-hidden">
           <Routes>
             <Route path="/" element={<Home />}></Route>
           </Routes>
