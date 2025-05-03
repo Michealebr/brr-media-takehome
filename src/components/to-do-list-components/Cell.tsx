@@ -84,7 +84,7 @@ const Cell: React.FC<CellProps> = ({ key, data, item, setTodos }) => {
         ) : (
           // else show it as a span (cant be edited)
           <span
-            className={`flex-1${item.completed ? "line-through text-gray-500" : ""}`}
+            className={`${item.completed ? "line-through text-gray-500" : ""}`}
             onDoubleClick={() => handleEdit(item)}
           >
             {item.title}
