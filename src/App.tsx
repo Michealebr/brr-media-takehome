@@ -17,17 +17,9 @@ function App() {
         <main className=" lg:ml-80 mt-5 lg:mt-0 flex-1 p-[30px] lg:p-10 overflow-x-hidden">
           <Routes>
             <Route path="/" element={<Home />}></Route>
-          </Routes>
-          <Routes>
             <Route path="/staff" element={<Staff />}></Route>
-          </Routes>
-          <Routes>
             <Route path="/create-ticket" element={<CreateTicket />}></Route>
-          </Routes>
-          <Routes>
             <Route path="/ticket-page" element={<TicketsPage />}></Route>
-          </Routes>
-          <Routes>
             <Route path="/to-do-list" element={<ToDoList />}></Route>
           </Routes>
         </main>
