@@ -12,7 +12,6 @@ interface TicketColProps {
     status: string;
     created: string;
   }[];
-  // children: React.ReactNode;
 }
 
 const TicketCol: React.FC<TicketColProps> = ({ key, title, tickets }) => {

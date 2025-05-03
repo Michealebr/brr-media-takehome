@@ -56,7 +56,7 @@ const Cell: React.FC<CellProps> = ({ key, data, item, setTodos }) => {
   return (
     <li
       key={key}
-      className="flex justify-between items-center border-b border-gray-200 px-3 py-2 rounded mb-2"
+      className="flex justify-between items-start border-b border-gray-200 px-3 py-2 rounded mb-2"
     >
       <div>
         <input
@@ -84,14 +84,14 @@ const Cell: React.FC<CellProps> = ({ key, data, item, setTodos }) => {
         ) : (
           // else show it as a span (cant be edited)
           <span
-            className={`${item.completed ? "line-through text-gray-500" : ""}`}
+            className={`flex-1${item.completed ? "line-through text-gray-500" : ""}`}
             onDoubleClick={() => handleEdit(item)}
           >
             {item.title}
           </span>
         )}
       </div>
-      <div className=" flex items-center">
+      <div className=" flex items-center flex-shrink-0 ">
         <button
           onClick={() => handleEdit(item)}
           className="cursor-pointer mr-4"
