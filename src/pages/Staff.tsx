@@ -1,5 +1,5 @@
 import React from "react";
-import StaffCardComponent from "../components/StaffCardComponent";
+import StaffCardComponent from "../components/staff-components/StaffCardComponent";
 import staffData from "../data/staff.json";
 
 const Staff = () => {

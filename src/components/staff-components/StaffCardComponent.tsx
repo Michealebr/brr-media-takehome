@@ -1,5 +1,5 @@
 import React from "react";
-import Mo from "../assets/Mo-pp.png";
+import Mo from "../../assets/Mo-pp.png";
 
 interface StaffProps {
   id: number;

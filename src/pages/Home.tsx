@@ -1,9 +1,9 @@
 import React from "react";
-import HomeCardComponent from "../components/HomeCardComponent";
+import HomeCardComponent from "../components/home-components/HomeCardComponent";
 import { Link } from "react-router-dom";
-import Arrow from "../assets/arrow-right.svg";
+// import Arrow from "../assets/arrow-right.svg";
 import LinkIcon from "../assets/square-arrow-out-up-right.svg";
-import TableComponent from "../components/TableComponent";
+import TableComponent from "../components/home-components/table-components/TableComponent";
 
 const Home = () => {
   return (
