@@ -1,5 +1,5 @@
-import React from "react";
-import FileUploadThin from "../assets/paperclip.svg";
+import React from 'react';
+import FileUploadThin from '../assets/paperclip.svg';
 
 interface FileInputProps {
   file: File | null;

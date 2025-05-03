@@ -1,5 +1,5 @@
-import TableCellComponent from "../table-components/TableCellComponent";
-import ticketData from "../../../data/tickets.json";
+import TableCellComponent from '../table-components/TableCellComponent';
+import ticketData from '../../../data/tickets.json';
 
 const TableComponent = () => {
   return (
@@ -7,10 +7,10 @@ const TableComponent = () => {
       <thead className=" text-left">
         <tr>
           <th className="px-4 py-2 text-sm font-semibold ">User</th>
-          <th className="px-4 py-2 text-sm font-semibold text-gray-700 ">
+          <th className="px-4 py-2 text-sm font-semibold text-gray-700">
             Ticket Problem
           </th>
-          <th className="px-4 py-2 text-sm font-semibold text-gray-700 ">
+          <th className="px-4 py-2 text-sm font-semibold text-gray-700">
             Status
           </th>
         </tr>

@@ -1,62 +1,62 @@
 [
-    {
-      "id": 1,
-      "name": "Alice Smith",
-      "role": "Video Producer",
-      "email": "alice@brrmedia.co.uk",
-      "status": "active",
-      "lastLogin": "2024-04-01T10:12:00Z",
-      "driveUsage": "3.5 GB",
-      "device": "MacBook Pro"
-    },
-    {
-      "id": 2,
-      "name": "Mohamed Virji",
-      "role": "Software Engineer",
-      "email": "mvirji@brrmedia.co.uk",
-      "status": "busy",
-      "lastLogin": "2024-04-10T14:30:00Z",
-      "driveUsage": "4.2 GB",
-      "device": "Dell XPS 15"
-    },
-    {
-      "id": 3,
-      "name": "Jessica Lee",
-      "role": "Content Manager",
-      "email": "jessica@brrmedia.co.uk",
-      "status": "inactive",
-      "lastLogin": "2024-03-28T08:45:00Z",
-      "driveUsage": "2.1 GB",
-      "device": "MacBook Air"
-    },
-    {
-        "id": 4,
-        "name": "Alice Smith",
-        "role": "Video Producer",
-        "email": "alice@brrmedia.co.uk",
-        "status": "active",
-        "lastLogin": "2024-04-01T10:12:00Z",
-        "driveUsage": "3.5 GB",
-        "device": "MacBook Pro"
-      },
-      {
-        "id": 5,
-        "name": "Mohamed Virji",
-        "role": "Software Engineer",
-        "email": "mvirji@brrmedia.co.uk",
-        "status": "busy",
-        "lastLogin": "2024-04-10T14:30:00Z",
-        "driveUsage": "4.2 GB",
-        "device": "Dell XPS 15"
-      },
-      {
-        "id": 6,
-        "name": "Jessica Lee",
-        "role": "Content Manager",
-        "email": "jessica@brrmedia.co.uk",
-        "status": "inactive",
-        "lastLogin": "2024-03-28T08:45:00Z",
-        "driveUsage": "2.1 GB",
-        "device": "MacBook Air"
-      }
-  ]
+  {
+    "id": 1,
+    "name": "Alice Smith",
+    "role": "Video Producer",
+    "email": "alice@brrmedia.co.uk",
+    "status": "active",
+    "lastLogin": "2024-04-01T10:12:00Z",
+    "driveUsage": "3.5 GB",
+    "device": "MacBook Pro"
+  },
+  {
+    "id": 2,
+    "name": "Mohamed Virji",
+    "role": "Software Engineer",
+    "email": "mvirji@brrmedia.co.uk",
+    "status": "busy",
+    "lastLogin": "2024-04-10T14:30:00Z",
+    "driveUsage": "4.2 GB",
+    "device": "Dell XPS 15"
+  },
+  {
+    "id": 3,
+    "name": "Jessica Lee",
+    "role": "Content Manager",
+    "email": "jessica@brrmedia.co.uk",
+    "status": "inactive",
+    "lastLogin": "2024-03-28T08:45:00Z",
+    "driveUsage": "2.1 GB",
+    "device": "MacBook Air"
+  },
+  {
+    "id": 4,
+    "name": "Alice Smith",
+    "role": "Video Producer",
+    "email": "alice@brrmedia.co.uk",
+    "status": "active",
+    "lastLogin": "2024-04-01T10:12:00Z",
+    "driveUsage": "3.5 GB",
+    "device": "MacBook Pro"
+  },
+  {
+    "id": 5,
+    "name": "Mohamed Virji",
+    "role": "Software Engineer",
+    "email": "mvirji@brrmedia.co.uk",
+    "status": "busy",
+    "lastLogin": "2024-04-10T14:30:00Z",
+    "driveUsage": "4.2 GB",
+    "device": "Dell XPS 15"
+  },
+  {
+    "id": 6,
+    "name": "Jessica Lee",
+    "role": "Content Manager",
+    "email": "jessica@brrmedia.co.uk",
+    "status": "inactive",
+    "lastLogin": "2024-03-28T08:45:00Z",
+    "driveUsage": "2.1 GB",
+    "device": "MacBook Air"
+  }
+]

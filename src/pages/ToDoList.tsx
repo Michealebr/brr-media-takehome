@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Cell from "../components/to-do-list-components/Cell";
-import Plus from "../assets/plus.svg";
-import todoData from "../data/todos.json";
+import React, { useState } from 'react';
+import Cell from '../components/to-do-list-components/Cell';
+import Plus from '../assets/plus.svg';
+import todoData from '../data/todos.json';
 
 interface TodoProps {
   id: number;
@@ -10,7 +10,7 @@ interface TodoProps {
 }
 
 const ToDoList = () => {
-  const [task, setTask] = useState("");
+  const [task, setTask] = useState('');
   const [todos, setTodos] = useState<TodoProps[]>(todoData);
 
   // add task (new todos) to our existing data of todos
@@ -25,7 +25,7 @@ const ToDoList = () => {
       };
       // gets all the past todos adds new todos clears task input
       setTodos([...todos, newTodo]);
-      setTask("");
+      setTask('');
     }
   };
 

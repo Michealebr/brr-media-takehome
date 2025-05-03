@@ -1,9 +1,9 @@
-import React from "react";
-import HomeCardComponent from "../components/home-components/HomeCardComponent";
-import { Link } from "react-router-dom";
+import React from 'react';
+import HomeCardComponent from '../components/home-components/HomeCardComponent';
+import { Link } from 'react-router-dom';
 // import Arrow from "../assets/arrow-right.svg";
-import LinkIcon from "../assets/square-arrow-out-up-right.svg";
-import TableComponent from "../components/home-components/table-components/TableComponent";
+import LinkIcon from '../assets/square-arrow-out-up-right.svg';
+import TableComponent from '../components/home-components/table-components/TableComponent';
 
 const Home = () => {
   return (
@@ -25,7 +25,7 @@ const Home = () => {
           Recent Requests
           <Link
             className="flex text-sm text-[var(--accent-color)] sm:ml-auto align-center items-center"
-            to={"/ticket-page"}
+            to={'/ticket-page'}
           >
             View all Requests
             <img className="ml-2 h-[15px] " src={LinkIcon} alt="arrow" />

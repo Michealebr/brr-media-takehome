@@ -1,5 +1,5 @@
-import React from "react";
-import TicketCard from "./TicketCard";
+import React from 'react';
+import TicketCard from './TicketCard';
 
 interface TicketColProps {
   key: string;
@@ -18,13 +18,13 @@ const TicketCol: React.FC<TicketColProps> = ({ key, title, tickets }) => {
   const ticketAmount = tickets.length;
 
   const statusColorMap: { [key: string]: string } = {
-    resolved: "bg-green-500",
-    inprogress: "bg-orange-500",
-    open: "bg-red-500",
+    resolved: 'bg-green-500',
+    inprogress: 'bg-orange-500',
+    open: 'bg-red-500',
   };
   // gets rid of spaces and upper case matches to the corresponding text color, if not found sets to gray
-  const statusKey = title.toLowerCase().replace(/\s+/g, "");
-  const statusColor = statusColorMap[statusKey.toLowerCase()] || "bg-gray-400";
+  const statusKey = title.toLowerCase().replace(/\s+/g, '');
+  const statusColor = statusColorMap[statusKey.toLowerCase()] || 'bg-gray-400';
 
   return (
     <div

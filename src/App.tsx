@@ -1,13 +1,13 @@
-import { useState } from "react";
-import { Routes, Route } from "react-router";
-import Home from "./pages/Home";
-import Navbar from "./components/navbar-components/Navbar";
+import { useState } from 'react';
+import { Routes, Route } from 'react-router';
+import Home from './pages/Home';
+import Navbar from './components/navbar-components/Navbar';
 
-import "./App.css";
-import Staff from "./pages/Staff";
-import CreateTicket from "./pages/CreateTicket";
-import TicketsPage from "./pages/TicketsPage";
-import ToDoList from "./pages/ToDoList";
+import './App.css';
+import Staff from './pages/Staff';
+import CreateTicket from './pages/CreateTicket';
+import TicketsPage from './pages/TicketsPage';
+import ToDoList from './pages/ToDoList';
 
 function App() {
   return (

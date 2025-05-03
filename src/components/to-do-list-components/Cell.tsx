@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Edit from "../../assets/square-pen.svg";
-import Delete from "../../assets/delete.svg";
+import React, { useState } from 'react';
+import Edit from '../../assets/square-pen.svg';
+import Delete from '../../assets/delete.svg';
 
 interface TodoProps {
   id: number;
@@ -17,7 +17,7 @@ interface CellProps {
 
 const Cell: React.FC<CellProps> = ({ key, data, item, setTodos }) => {
   const [editingId, setEditingId] = useState<number | null>(null);
-  const [editedText, setEditedText] = useState("");
+  const [editedText, setEditedText] = useState('');
 
   // filters new array of ids that doesnt match the id thats being deleted and sets that as todos
   const handleDelete = (id: number) => {
@@ -51,7 +51,7 @@ const Cell: React.FC<CellProps> = ({ key, data, item, setTodos }) => {
     // no longer input
     setEditingId(null);
     // clears stored editedText
-    setEditedText("");
+    setEditedText('');
   };
   return (
     <li
@@ -74,8 +74,8 @@ const Cell: React.FC<CellProps> = ({ key, data, item, setTodos }) => {
             value={editedText}
             onChange={(e) => setEditedText(e.target.value)}
             onKeyDown={(e) => {
-              if (e.key === "Enter") handleSave(item.id);
-              if (e.key === "Escape") handleCancel();
+              if (e.key === 'Enter') handleSave(item.id);
+              if (e.key === 'Escape') handleCancel();
             }}
             onBlur={handleCancel}
             className=" focus:outline-none border border-gray-300 rounded px-2 py-1 foc"
@@ -84,7 +84,7 @@ const Cell: React.FC<CellProps> = ({ key, data, item, setTodos }) => {
         ) : (
           // else show it as a span (cant be edited)
           <span
-            className={`${item.completed ? "line-through text-gray-500" : ""}`}
+            className={`${item.completed ? 'line-through text-gray-500' : ''}`}
             onDoubleClick={() => handleEdit(item)}
           >
             {item.title}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 interface TicketCardProps {
   ticket: {
@@ -14,21 +14,21 @@ interface TicketCardProps {
 const TicketCard: React.FC<TicketCardProps> = ({ ticket }) => {
   const [expanded, setExpand] = useState(false);
 
-  const [date, timeWithZ] = ticket.created.split("T");
-  const time = timeWithZ.replace("Z", "").slice(0, -3);
+  const [date, timeWithZ] = ticket.created.split('T');
+  const time = timeWithZ.replace('Z', '').slice(0, -3);
 
   // format date to english dd/mm/yyyy
-  const [year, month, day] = date.split("-");
+  const [year, month, day] = date.split('-');
   const formattedDate = `${day}-${month}-${year}`;
   // color status map to show completion
   const statusColorMap: { [key: string]: string } = {
-    resolved: "bg-green-500",
-    inprogress: "bg-orange-500",
-    open: "bg-red-500",
+    resolved: 'bg-green-500',
+    inprogress: 'bg-orange-500',
+    open: 'bg-red-500',
   };
   // gets rid of spaces and upper case matches to the corresponding text color, if not found sets to gray
-  const statusKey = ticket.status.toLowerCase().replace(/\s+/g, "");
-  const statusColor = statusColorMap[statusKey.toLowerCase()] || "bg-gray-400";
+  const statusKey = ticket.status.toLowerCase().replace(/\s+/g, '');
+  const statusColor = statusColorMap[statusKey.toLowerCase()] || 'bg-gray-400';
 
   return (
     <div

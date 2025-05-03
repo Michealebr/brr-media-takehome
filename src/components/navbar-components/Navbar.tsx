@@ -1,13 +1,13 @@
-import { useEffect, useRef, useState } from "react";
-import Roles from "../../assets/user.svg";
-import Staff from "../../assets/users-round.svg";
-import Tickets from "../../assets/tickets.svg";
-import CreateTicket from "../../assets/ticket-plus.svg";
-import Todo from "../../assets/list-checks.svg";
-import Mo from "../../assets/Mo-pp.png";
-import Home from "../../assets/house.svg";
-import NavbarLinks from "./NavbarLinks";
-import Menu from "../../assets/panel-left-dashed.svg";
+import { useEffect, useRef, useState } from 'react';
+import Roles from '../../assets/user.svg';
+import Staff from '../../assets/users-round.svg';
+import Tickets from '../../assets/tickets.svg';
+import CreateTicket from '../../assets/ticket-plus.svg';
+import Todo from '../../assets/list-checks.svg';
+import Mo from '../../assets/Mo-pp.png';
+import Home from '../../assets/house.svg';
+import NavbarLinks from './NavbarLinks';
+import Menu from '../../assets/panel-left-dashed.svg';
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -21,13 +21,13 @@ const Navbar = () => {
     };
 
     if (navOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener('mousedown', handleClickOutside);
     } else {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [navOpen]);
 
@@ -95,7 +95,7 @@ const Navbar = () => {
       <div
         ref={navRef}
         className={`lg:hidden shadow fixed top-0 left-0 bottom-0 z-50  w-[200px] sm:w-[300px] bg-[var(--secondary-color)] rounded-lg gap-[10rem] transform transition-transform duration-300 ease-in-out flex flex-col ${
-          navOpen ? "translate-x-0" : "-translate-x-full"
+          navOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
         {/* profile */}

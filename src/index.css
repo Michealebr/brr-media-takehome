@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @font-face {
   font-family: 'CalSans';
@@ -6,11 +6,11 @@
   font-weight: normal;
   font-style: normal;
 }
-@theme{
-  --font-title: "CalSans", "serif"
+@theme {
+  --font-title: 'CalSans', 'serif';
 }
 :root {
-  font-family:   Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
