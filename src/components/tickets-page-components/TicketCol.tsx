@@ -32,7 +32,7 @@ const TicketCol: React.FC<TicketColProps> = ({ key, title, tickets }) => {
   return (
     <div
       key={key}
-      className=" min-w-[200px] flex flex-col w-full px-2 py-3 mx-1  rounded-sm bg-[var(--secondary-color)]"
+      className=" min-w-[270px] sm:min-w-[300px] flex flex-col w-full px-2 py-3 mx-1  rounded-sm bg-[var(--secondary-color)]"
     >
       <div className="flex items-center text-sm mb-4 ">
         <div className={`h-[10px] w-[10px] ${statusColor} rounded-full mr-2`}></div>

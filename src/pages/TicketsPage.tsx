@@ -6,7 +6,7 @@ const TicketsPage = () => {
   const statuses = ["Backlog", "Open", "In Progress", "Resolved"];
 
   return (
-    <div className="flex max-h-full w-full max-w-[2000px]">
+    <div className="flex max-h-full w-full max-w-[2000px] overflow-x-auto scrollbar-custom ">
       {statuses.map((status) => (
       <TicketCol 
       key={status}
