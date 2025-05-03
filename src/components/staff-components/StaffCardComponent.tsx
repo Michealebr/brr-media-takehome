@@ -33,20 +33,25 @@ const StaffCardComponent: React.FC<StaffProps> = ({ id, name, role, email, statu
   const statusColor = statusColorMap[status.toLowerCase()] || "bg-gray-400";
 
   return (
-    <div className="bg-[var(--secondary-color)] w-[300px]  rounded-xl px-5 py-3 text-sm relative shadow" key={id} >
+    <div className="bg-[var(--secondary-color)] w-full sm:w-[250px]  rounded-xl px-5 py-3 text-sm relative shadow" key={id} >
       <div className=" flex pb-2  items-center">
         <div className="w-[60px]">
-          <img className="h-[50px]" src={Mo} alt="staff profile picture" />
+          <img className="h-[40px]" src={Mo} alt="staff profile picture" />
         </div>
         <div className="">
-          <p>{name}</p>
-          <p className="font-bold">{role}</p>
+          <p className="text-xs">{name}</p>
+          <p className="text-[13px] font-bold">{role}</p>
         </div>
-        <div className={`absolute top-4 right-4 h-[10px] w-[10px] rounded-full ${statusColor}`}></div>
+        <div className={`absolute top-4 right-4 h-[10px] w-[10px] rounded-full cursor-pointer  group ${statusColor}`}>
+        <span className="absolute left-1/2 -translate-x-1/2 top-full mt-1 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity z-10 whitespace-nowrap">
+    {status}
+  </span>
+        </div>
       </div>
-      <div className="">{email}</div>
+      <div className="text-xs">{email}</div>
 
       {/* only admin should see */}
+
 
       <div className="border-b border-gray-300 p-1"></div>
       <div className="text-xs py-2">

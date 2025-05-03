@@ -38,6 +38,165 @@
       "description": "Printer not responding to any print requests.",
       "status": "In Progress",
       "created": "2024-04-07T10:00:00Z"
+    },
+    {
+      "id": 106,
+      "user": "alice@brrmedia.co.uk",
+      "issue": "Wi-Fi Connectivity",
+      "description": "My MacBook keeps dropping Wi-Fi.",
+      "status": "Open",
+      "created": "2024-03-28T09:00:00Z"
+    },
+    {
+      "id": 107,
+      "user": "james@brrmedia.co.uk",
+      "issue": "Software Installation",
+      "description": "Need help installing Adobe Premiere Pro.",
+      "status": "In Progress",
+      "created": "2024-04-01T11:15:00Z"
+    },
+    {
+      "id": 108,
+      "user": "sara@brrmedia.co.uk",
+      "issue": "System Crash",
+      "description": "Laptop crashes randomly while working.",
+      "status": "Open",
+      "created": "2024-04-03T14:22:00Z"
+    },
+    {
+      "id": 109,
+      "user": "leo@brrmedia.co.uk",
+      "issue": "Email Access",
+      "description": "Can't access company email on phone.",
+      "status": "Resolved",
+      "created": "2024-04-05T08:45:00Z"
+    },
+    {
+      "id": 110,
+      "user": "nina@brrmedia.co.uk",
+      "issue": "Printer Not Working",
+      "description": "Printer not responding to any print requests.",
+      "status": "In Progress",
+      "created": "2024-04-07T10:00:00Z"
+    },
+    {
+      "id": 111,
+      "user": "alice@brrmedia.co.uk",
+      "issue": "Wi-Fi Connectivity",
+      "description": "My MacBook keeps dropping Wi-Fi.",
+      "status": "Open",
+      "created": "2024-03-28T09:00:00Z"
+    },
+    {
+      "id": 112,
+      "user": "james@brrmedia.co.uk",
+      "issue": "Software Installation",
+      "description": "Need help installing Adobe Premiere Pro.",
+      "status": "In Progress",
+      "created": "2024-04-01T11:15:00Z"
+    },
+    {
+      "id": 113,
+      "user": "sara@brrmedia.co.uk",
+      "issue": "System Crash",
+      "description": "Laptop crashes randomly while working.",
+      "status": "Open",
+      "created": "2024-04-03T14:22:00Z"
+    },
+    {
+      "id": 114,
+      "user": "leo@brrmedia.co.uk",
+      "issue": "Email Access",
+      "description": "Can't access company email on phone.",
+      "status": "Resolved",
+      "created": "2024-04-05T08:45:00Z"
+    },
+    {
+      "id": 115,
+      "user": "nina@brrmedia.co.uk",
+      "issue": "Printer Not Working",
+      "description": "Printer not responding to any print requests.",
+      "status": "In Progress",
+      "created": "2024-04-07T10:00:00Z"
+    },
+    {
+      "id": 116,
+      "user": "alice@brrmedia.co.uk",
+      "issue": "Wi-Fi Connectivity",
+      "description": "My MacBook keeps dropping Wi-Fi.",
+      "status": "Open",
+      "created": "2024-03-28T09:00:00Z"
+    },
+    {
+      "id": 117,
+      "user": "james@brrmedia.co.uk",
+      "issue": "Software Installation",
+      "description": "Need help installing Adobe Premiere Pro.",
+      "status": "In Progress",
+      "created": "2024-04-01T11:15:00Z"
+    },
+    {
+      "id": 118,
+      "user": "sara@brrmedia.co.uk",
+      "issue": "System Crash",
+      "description": "Laptop crashes randomly while working.",
+      "status": "Open",
+      "created": "2024-04-03T14:22:00Z"
+    },
+    {
+      "id": 119,
+      "user": "leo@brrmedia.co.uk",
+      "issue": "Email Access",
+      "description": "Can't access company email on phone.",
+      "status": "Resolved",
+      "created": "2024-04-05T08:45:00Z"
+    },
+    {
+      "id": 120,
+      "user": "nina@brrmedia.co.uk",
+      "issue": "Printer Not Working",
+      "description": "Printer not responding to any print requests.",
+      "status": "In Progress",
+      "created": "2024-04-07T10:00:00Z"
+    },    {
+      "id": 121,
+      "user": "alice@brrmedia.co.uk",
+      "issue": "Wi-Fi Connectivity",
+      "description": "My MacBook keeps dropping Wi-Fi.",
+      "status": "Open",
+      "created": "2024-03-28T09:00:00Z"
+    },
+    {
+      "id": 122,
+      "user": "james@brrmedia.co.uk",
+      "issue": "Software Installation",
+      "description": "Need help installing Adobe Premiere Pro.",
+      "status": "In Progress",
+      "created": "2024-04-01T11:15:00Z"
+    },
+    {
+      "id": 123,
+      "user": "sara@brrmedia.co.uk",
+      "issue": "System Crash",
+      "description": "Laptop crashes randomly while working.",
+      "status": "Backlog",
+      "created": "2024-04-03T14:22:00Z"
+    },
+    {
+      "id": 124,
+      "user": "leo@brrmedia.co.uk",
+      "issue": "Email Access",
+      "description": "Can't access company email on phone.",
+      "status": "Backlog",
+      "created": "2024-04-05T08:45:00Z"
+    },
+    {
+      "id": 125,
+      "user": "nina@brrmedia.co.uk",
+      "issue": "Printer Not Working",
+      "description": "Printer not responding to any print requests.",
+      "status": "Backlog",
+      "created": "2024-04-07T10:00:00Z"
     }
   ]
   

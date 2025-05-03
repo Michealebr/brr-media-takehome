@@ -5,7 +5,14 @@ import staffData from "../data/staff.json";
 const Staff = () => {
   return (
     <>
-    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2  xl:grid-cols-4 gap-6">
+     <div className="font-bold text-5xl font-title mb-10 ">
+        Staff
+        <span className="ml-10 font-thin text-lg text-gray-500">
+          {staffData.length}
+        </span>
+      </div>
+    <div className="grid g gap-4   grid-cols-[repeat(auto-fit,_minmax(270px,_1fr))] ">
+
     {staffData.map((person) => (
         <StaffCardComponent
           id={person.id}

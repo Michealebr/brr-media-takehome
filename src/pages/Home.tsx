@@ -25,7 +25,7 @@ const Home = () => {
           Recent Requests
           <Link
             className="flex text-sm text-[var(--accent-color)] sm:ml-auto align-center items-center"
-            to={"/staff"}
+            to={"/ticket-page"}
           >
             View all Requests
             <img className="ml-2 h-[15px] " src={LinkIcon} alt="arrow" />

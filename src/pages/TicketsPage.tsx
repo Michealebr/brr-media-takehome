@@ -8,13 +8,12 @@ const TicketsPage = () => {
   return (
     <div className="flex max-h-full w-full max-w-[2000px] overflow-x-auto scrollbar-custom ">
       {statuses.map((status) => (
-      <TicketCol 
-      key={status}
-      title={status}
-      tickets={ticketData.filter((t)=> t.status === status)}
-      />
+        <TicketCol
+          key={status}
+          title={status}
+          tickets={ticketData.filter((t) => t.status === status)}
+        />
       ))}
-
     </div>
   );
 };

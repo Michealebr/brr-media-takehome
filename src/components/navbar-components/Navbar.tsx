@@ -32,13 +32,15 @@ const Navbar = () => {
   }, [navOpen]);
 
   return (
-    // i need something so when the screen is smaller than 1100 to make the nav hidden and then when i click it make it true and then
     <>
-      <div className="lg:hidden  flex  items-center px-5 fixed border-b absolute border-gray-300 w-full h-[40px] bg-[var(--primary-color)]">
+      <div className="lg:hidden z-10  flex  items-center px-5 fixed border-b absolute border-gray-300 w-full h-[40px] bg-[var(--primary-color)]">
         <button
-          className="cursor-pointer mr-5"
+          className="cursor-pointer group mr-5 relative"
           onClick={() => setNavOpen(!navOpen)}
         >
+          <span className="absolute left-0 -translate-x-0 top-full mt-1 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity z-10 whitespace-nowrap">
+            Open sidebar
+          </span>
           <img className="w-4" src={Menu} alt="Open sidebar" />
         </button>
         <div className="font-bold text-sm">BRR Media Dashboard </div>

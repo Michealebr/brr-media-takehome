@@ -15,8 +15,7 @@ interface TicketColProps {
 }
 
 const TicketCol: React.FC<TicketColProps> = ({ key, title, tickets }) => {
-
-  const ticketAmount = tickets.length
+  const ticketAmount = tickets.length;
 
   const statusColorMap: { [key: string]: string } = {
     resolved: "bg-green-500",
@@ -27,24 +26,22 @@ const TicketCol: React.FC<TicketColProps> = ({ key, title, tickets }) => {
   const statusKey = title.toLowerCase().replace(/\s+/g, "");
   const statusColor = statusColorMap[statusKey.toLowerCase()] || "bg-gray-400";
 
-
   return (
     <div
       key={key}
-      className=" min-w-[270px] sm:min-w-[300px] flex flex-col w-full px-2 py-3 mx-1  rounded-sm bg-[var(--secondary-color)]"
+      className="min-w-[270px] sm:min-w-[300px] flex flex-col w-full px-2 py-3 mx-1  rounded-sm bg-[var(--secondary-color)]"
     >
       <div className="flex items-center text-sm mb-4 ">
-        <div className={`h-[10px] w-[10px] ${statusColor} rounded-full mr-2`}></div>
+        <div
+          className={`h-[10px] w-[10px] ${statusColor} rounded-full mr-2`}
+        ></div>
         <h4 className="mr-3">{title}</h4>
         <div className="text-xs text-gray-400">{ticketAmount}</div>
       </div>
       <div className="h-screen overflow-y-auto scrollbar-custom">
         <div className="mr-2">
-          {tickets.map((ticket)=> (
-            <TicketCard
-            key={ticket.id}
-            ticket={ticket}
-            />
+          {tickets.map((ticket) => (
+            <TicketCard key={ticket.id} ticket={ticket} />
           ))}
         </div>
       </div>

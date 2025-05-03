@@ -16,7 +16,7 @@ const TableComponent = () => {
         </tr>
       </thead>
       <tbody className=" divide-y divide-gray-200 text-sm">
-        {ticketData.map((ticket) => (
+        {ticketData.slice(0, 5).map((ticket) => (
           <TableCellComponent
             id={ticket.id}
             email={ticket.user}
