@@ -8,9 +8,16 @@ interface FileInputProps {
 const FileInput: React.FC<FileInputProps> = ({ file, setFile }) => {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
-    if (selectedFile) {
-      setFile(selectedFile);
+    // if no selected file exit
+    if (!selectedFile) return;
+
+    const allowedFileTypes = ['image/png', 'image/jpeg', 'application/pdf'];
+    // if selected file doesnt include one of these files exit and alert what we accept
+    if (!allowedFileTypes.includes(selectedFile.type)) {
+      alert('Only PNG, JPEG, or PDF files are allowed.');
+      return;
     }
+    setFile(selectedFile);
   };
   return (
     <div className="flex items-center">
@@ -21,6 +28,7 @@ const FileInput: React.FC<FileInputProps> = ({ file, setFile }) => {
         type="file"
         id="file-upload"
         onChange={handleFileChange}
+        accept=".png,.jpg,.jpeg,.pdf"
         className="hidden"
       />
       {file && <p className="text-gray-600">{file.name}</p>}

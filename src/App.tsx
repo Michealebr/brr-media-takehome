@@ -1,8 +1,6 @@
-import { useState } from 'react';
-import { Routes, Route } from 'react-router';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/navbar-components/Navbar';
-
 import './App.css';
 import Staff from './pages/Staff';
 import CreateTicket from './pages/CreateTicket';

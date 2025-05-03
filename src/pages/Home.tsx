@@ -1,7 +1,5 @@
-import React from 'react';
 import HomeCardComponent from '../components/home-components/HomeCardComponent';
 import { Link } from 'react-router-dom';
-// import Arrow from "../assets/arrow-right.svg";
 import LinkIcon from '../assets/square-arrow-out-up-right.svg';
 import TableComponent from '../components/home-components/table-components/TableComponent';
 
@@ -14,7 +12,6 @@ const Home = () => {
           Here’s a quick overview of what’s happening across the system today.
         </p>
       </div>
-
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <HomeCardComponent subheading="Tickets Not Started" number="5" />
         <HomeCardComponent subheading="Tickets In Progress" number="12" />
@@ -28,11 +25,9 @@ const Home = () => {
             to={'/ticket-page'}
           >
             View all Requests
-            <img className="ml-2 h-[15px] " src={LinkIcon} alt="arrow" />
+            <img className="ml-2 h-[15px]" src={LinkIcon} alt="arrow" />
           </Link>
         </div>
-        {/* <div className=" border-b border-gray-300 p-1"></div> */}
-
         <div className="w-full overflow-x-auto scrollbar-custom ">
           <TableComponent />
         </div>

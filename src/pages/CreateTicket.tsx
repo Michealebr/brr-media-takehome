@@ -7,6 +7,7 @@ const CreateTicket = () => {
   const [issueType, setIssueType] = useState('');
   const [message, setMessage] = useState('');
   const [file, setFile] = useState<File | null>(null);
+  const [loading, setLoading] = useState(false);
 
   const issueTypeData = [
     { id: 1, value: 'Wi-Fi Connectivity' },
@@ -19,25 +20,32 @@ const CreateTicket = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const formData = new FormData();
+    if (!issueType || !message) {
+      alert('Please fill in all fields.');
+      return;
+    }
 
+    const formData = new FormData();
     formData.append('issueType', issueType);
     formData.append('message', message);
     if (file) formData.append('file', file);
 
-    // log results
-    console.log('Issue Type:', issueType);
-    console.log('Message:', message);
-    console.log('File:', file);
+    // Optional: log for debugging
+    console.log('Form data submitted:', {
+      issueType,
+      message,
+      file,
+    });
 
-    console.log('Form data submitted:', formData);
+    setLoading(true);
 
-    // clear after submission
-    setIssueType('');
-    setMessage('');
-    setFile(null);
-
-    alert('Ticket submitted successfully!');
+    setTimeout(() => {
+      setLoading(false);
+      alert('Ticket submitted!');
+      setIssueType('');
+      setMessage('');
+      setFile(null);
+    }, 1000);
   };
 
   return (
@@ -68,9 +76,12 @@ const CreateTicket = () => {
           <FileInput file={file} setFile={setFile} />
           <button
             type="submit"
-            className="w-full mt-5 bg-[var(--accent-color)] cursor-pointer text-white p-2 rounded "
+            className={`w-full mt-5 bg-[var(--accent-color)] cursor-pointer text-white p-2 rounded transition-opacity ${
+              loading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-orange-600'
+            }`}
+            disabled={loading}
           >
-            Submit Ticket
+            {loading ? 'Submitting...' : 'Submit Request'}
           </button>
         </form>
       </div>
