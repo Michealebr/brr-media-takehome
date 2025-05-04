@@ -23,7 +23,7 @@ const TicketCol: React.FC<TicketColProps> = ({ key, title, tickets }) => {
     return t.user === email;
   });
 
-  const ticketAmount = tickets.length;
+  const ticketAmount = filteredTicketsByRole.length;
 
   const statusColorMap: { [key: string]: string } = {
     resolved: 'bg-green-500',
