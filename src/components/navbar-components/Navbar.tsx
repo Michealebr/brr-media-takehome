@@ -4,7 +4,6 @@ import Staff from '../../assets/users-round.svg';
 import Tickets from '../../assets/tickets.svg';
 import CreateTicket from '../../assets/ticket-plus.svg';
 import Todo from '../../assets/list-checks.svg';
-import Mo from '../../assets/Mo-pp.png';
 import Home from '../../assets/house.svg';
 import NavbarLinks from './NavbarLinks';
 import Menu from '../../assets/panel-left-dashed.svg';
@@ -54,7 +53,7 @@ const Navbar = () => {
         <div className="flex p-5 items-center">
           <img
             className="w-8 mr-4 rounded-full"
-            src={Mo}
+            src={Roles}
             alt="user profile picture"
           />
           <p className="text-sm">{email}</p>
@@ -102,10 +101,10 @@ const Navbar = () => {
         <div className="flex p-5 items-center">
           <img
             className="w-8 mr-4 rounded-full"
-            src={Mo}
+            src={Roles}
             alt="user profile picture"
           />
-          <p className="text-sm hidden sm:flex">mvirji@brrmedia.co.uk</p>
+          <p className="text-sm hidden sm:flex">{email}</p>
         </div>
         {/* ctn for links and admin change */}
         <div className="px-6 flex flex-col gap-[10rem]">
