@@ -5,6 +5,7 @@ import Delete from '../../assets/delete.svg';
 interface TodoProps {
   id: number;
   title: string;
+  user: string;
   completed: boolean;
 }
 

@@ -13,7 +13,6 @@ interface TicketCardProps {
 
 const TicketCard: React.FC<TicketCardProps> = ({ ticket }) => {
   const [expanded, setExpand] = useState(false);
-
   const [date, timeWithZ] = ticket.created.split('T');
   const time = timeWithZ.replace('Z', '').slice(0, -3);
 

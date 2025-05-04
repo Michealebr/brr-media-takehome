@@ -2,16 +2,24 @@ import React, { useState } from 'react';
 import Cell from '../components/to-do-list-components/Cell';
 import Plus from '../assets/plus.svg';
 import todoData from '../data/todos.json';
+import { useUser } from '../context/UserContext';
 
 interface TodoProps {
   id: number;
   title: string;
+  user: string;
   completed: boolean;
 }
 
 const ToDoList = () => {
+  const { email } = useUser();
   const [task, setTask] = useState('');
   const [todos, setTodos] = useState<TodoProps[]>(todoData);
+
+  // filter todos by email to get current user todos
+  const filteredTodosByEmail = todos.filter((todo) => {
+    return todo.user === email;
+  });
 
   // add task (new todos) to our existing data of todos
   const handleAdd = (e: React.FormEvent) => {
@@ -19,8 +27,9 @@ const ToDoList = () => {
     if (task.trim()) {
       //gets rid of white space to make sure no empty tasks can be passed
       const newTodo: TodoProps = {
-        id: Date.now(), //see if todos.length + 1
+        id: Date.now(), 
         title: task,
+        user: email,
         completed: false,
       };
       // gets all the past todos adds new todos clears task input
@@ -34,7 +43,7 @@ const ToDoList = () => {
       <div className="font-bold text-5xl font-title mb-10 ">
         Task
         <span className="ml-10 font-thin text-lg text-gray-500">
-          {todos.length}
+          {filteredTodosByEmail.length}
         </span>
       </div>
       <form
@@ -55,7 +64,7 @@ const ToDoList = () => {
         />
       </form>
       <ul className="h-screen overflow-y-auto scrollbar-custom">
-        {todos.map((todo, index) => (
+        {filteredTodosByEmail.map((todo, index) => (
           <Cell key={index} item={todo} setTodos={setTodos} data={todos} />
         ))}
       </ul>

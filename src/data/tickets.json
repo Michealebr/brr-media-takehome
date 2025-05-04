@@ -121,7 +121,7 @@
   },
   {
     "id": 116,
-    "user": "alice@brrmedia.co.uk",
+    "user": "user@brrmedia.co.uk",
     "issue": "Wi-Fi Connectivity",
     "description": "My MacBook keeps dropping Wi-Fi.",
     "status": "Open",
@@ -129,7 +129,7 @@
   },
   {
     "id": 117,
-    "user": "james@brrmedia.co.uk",
+    "user": "user@brrmedia.co.uk",
     "issue": "Software Installation",
     "description": "Need help installing Adobe Premiere Pro.",
     "status": "In Progress",
@@ -137,7 +137,7 @@
   },
   {
     "id": 118,
-    "user": "sara@brrmedia.co.uk",
+    "user": "user@brrmedia.co.uk",
     "issue": "System Crash",
     "description": "Laptop crashes randomly while working.",
     "status": "Open",
@@ -145,7 +145,7 @@
   },
   {
     "id": 119,
-    "user": "leo@brrmedia.co.uk",
+    "user": "user@brrmedia.co.uk",
     "issue": "Email Access",
     "description": "Can't access company email on phone.",
     "status": "Resolved",
@@ -153,7 +153,7 @@
   },
   {
     "id": 120,
-    "user": "nina@brrmedia.co.uk",
+    "user": "user@brrmedia.co.uk",
     "issue": "Printer Not Working",
     "description": "Printer not responding to any print requests.",
     "status": "In Progress",
@@ -161,7 +161,7 @@
   },
   {
     "id": 121,
-    "user": "alice@brrmedia.co.uk",
+    "user": "staff@brrmedia.co.uk",
     "issue": "Wi-Fi Connectivity",
     "description": "My MacBook keeps dropping Wi-Fi.",
     "status": "Open",
@@ -169,7 +169,7 @@
   },
   {
     "id": 122,
-    "user": "james@brrmedia.co.uk",
+    "user": "staff@brrmedia.co.uk",
     "issue": "Software Installation",
     "description": "Need help installing Adobe Premiere Pro.",
     "status": "In Progress",
@@ -177,7 +177,7 @@
   },
   {
     "id": 123,
-    "user": "sara@brrmedia.co.uk",
+    "user": "staff@brrmedia.co.uk",
     "issue": "System Crash",
     "description": "Laptop crashes randomly while working.",
     "status": "Backlog",
@@ -185,15 +185,15 @@
   },
   {
     "id": 124,
-    "user": "leo@brrmedia.co.uk",
+    "user": "staff@brrmedia.co.uk",
     "issue": "Email Access",
     "description": "Can't access company email on phone.",
-    "status": "Backlog",
+    "status": "Resolved",
     "created": "2024-04-05T08:45:00Z"
   },
   {
     "id": 125,
-    "user": "nina@brrmedia.co.uk",
+    "user": "staff@brrmedia.co.uk",
     "issue": "Printer Not Working",
     "description": "Printer not responding to any print requests.",
     "status": "Backlog",

@@ -1,5 +1,6 @@
 import React from 'react';
 import TicketCard from './TicketCard';
+import { useUser } from '../../context/UserContext';
 
 interface TicketColProps {
   key: string;
@@ -15,6 +16,13 @@ interface TicketColProps {
 }
 
 const TicketCol: React.FC<TicketColProps> = ({ key, title, tickets }) => {
+  const { role, email } = useUser();
+
+  const filteredTicketsByRole = tickets.filter((t) => {
+    if (role === 'admin') return true;
+    return t.user === email;
+  });
+
   const ticketAmount = tickets.length;
 
   const statusColorMap: { [key: string]: string } = {
@@ -40,7 +48,7 @@ const TicketCol: React.FC<TicketColProps> = ({ key, title, tickets }) => {
       </div>
       <div className="h-screen overflow-y-auto scrollbar-custom">
         <div className="mr-2">
-          {tickets.map((ticket) => (
+          {filteredTicketsByRole.map((ticket) => (
             <TicketCard key={ticket.id} ticket={ticket} />
           ))}
         </div>

@@ -5,9 +5,9 @@ import { useUser } from '../../context/UserContext';
 type Role = 'admin' | 'staff' | 'user';
 
 const defaultEmails: Record<Role, string> = {
-  admin: 'admin@bbrmedia.co.uk',
-  staff: 'staff@bbrmedia.co.uk',
-  user: 'user@bbrmedia.co.uk',
+  admin: 'admin@brrmedia.co.uk',
+  staff: 'staff@brrmedia.co.uk',
+  user: 'user@brrmedia.co.uk',
 };
 
 const RoleSelectDropdown = () => {

@@ -2,36 +2,43 @@
   {
     "id": 1,
     "title": "Update Chrome",
+    "user": "user@brrmedia.co.uk",
     "completed": false
   },
   {
     "id": 2,
     "title": "Finish project report",
+    "user": "user@brrmedia.co.uk",
     "completed": false
   },
   {
     "id": 3,
     "title": "Call the plumber",
+    "user": "staff@brrmedia.co.uk",
     "completed": true
   },
   {
     "id": 4,
-    "title": "Buy groceries",
+    "title": "Organize docs",
+    "user": "staff@brrmedia.co.uk",
     "completed": false
   },
   {
     "id": 5,
-    "title": "Clean the kitchen",
+    "title": "Don't break Prod",
+    "user": "admin@brrmedia.co.uk",
     "completed": true
   },
   {
     "id": 6,
-    "title": "Book doctor appointment",
+    "title": "Don't commit to main",
+    "user": "admin@brrmedia.co.uk",
     "completed": false
   },
   {
     "id": 7,
     "title": "Read 10 pages of a book",
+    "user": "admin@brrmedia.co.uk",
     "completed": false
   }
 ]
