@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 interface navbarLinkProps {
   link: string;
-  src: any;
+  src: string;
   alt: string;
   title: string;
-  onClickFunc?: any;
+  onClickFunc?: () => void;
 }
 
 const NavbarLinks: React.FC<navbarLinkProps> = ({
