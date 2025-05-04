@@ -8,10 +8,13 @@ import Mo from '../../assets/Mo-pp.png';
 import Home from '../../assets/house.svg';
 import NavbarLinks from './NavbarLinks';
 import Menu from '../../assets/panel-left-dashed.svg';
+import { useUser } from '../../context/UserContext';
+import RoleSelectDropdown from './RoleSelectDropdown';
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   const navRef = useRef<HTMLDivElement>(null);
+  const { email } = useUser();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -54,7 +57,7 @@ const Navbar = () => {
             src={Mo}
             alt="user profile picture"
           />
-          <p className="text-sm">mvirji@brrmedia.co.uk</p>
+          <p className="text-sm">{email}</p>
         </div>
         {/* ctn for links and admin change */}
         <div className="px-6 flex flex-col gap-[10rem]">
@@ -85,16 +88,13 @@ const Navbar = () => {
               title="To-Do List"
             />
           </div>
-          <div className="text-sm flex">
-            <img className="mr-4 h-[18px]" src={Roles} alt="home icon" />
-            {/* drop down button for role */}Select Role
-          </div>
+          <RoleSelectDropdown />
         </div>
       </div>
 
       <div
         ref={navRef}
-        className={`lg:hidden shadow fixed top-0 left-0 bottom-0 z-50  w-[200px] sm:w-[300px] bg-[var(--secondary-color)] rounded-lg gap-[10rem] transform transition-transform duration-300 ease-in-out flex flex-col ${
+        className={`lg:hidden shadow fixed top-0 left-0 bottom-0 z-30  w-[200px] sm:w-[300px] bg-[var(--secondary-color)] rounded-lg gap-[10rem] transform transition-transform duration-300 ease-in-out flex flex-col ${
           navOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
@@ -147,10 +147,7 @@ const Navbar = () => {
               onClickFunc={() => setNavOpen(false)}
             />
           </div>
-          <div className="text-sm flex">
-            <img className="mr-4 h-[18px]" src={Roles} alt="home icon" />
-            {/* drop down button for role */}Select Role
-          </div>
+          <RoleSelectDropdown />
         </div>
       </div>
     </>

@@ -2,12 +2,15 @@ import HomeCardComponent from '../components/home-components/HomeCardComponent';
 import { Link } from 'react-router-dom';
 import LinkIcon from '../assets/square-arrow-out-up-right.svg';
 import TableComponent from '../components/home-components/table-components/TableComponent';
+import { useUser } from '../context/UserContext';
 
 const Home = () => {
+    const {role} = useUser();
+
   return (
     <div className="flex flex-col gap-20 ">
       <div className="bg-[var(--secondary-color)] p-5 rounded-xl text-center ">
-        <h1 className="text-2xl font-bold mb-1">Welcome back, Michael 👋</h1>
+        <h1 className="text-2xl font-bold mb-1">Welcome back, {role} 👋</h1>
         <p className="text-sm text-gray-500 ">
           Here’s a quick overview of what’s happening across the system today.
         </p>

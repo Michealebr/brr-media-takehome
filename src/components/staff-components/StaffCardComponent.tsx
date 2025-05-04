@@ -1,5 +1,6 @@
 import React from 'react';
 import Mo from '../../assets/Mo-pp.png';
+import { useUser } from '../../context/UserContext';
 
 interface StaffProps {
   id: number;
@@ -22,12 +23,15 @@ const StaffCardComponent: React.FC<StaffProps> = ({
   driveUsage,
   device,
 }) => {
+  const { role: currentRole } = useUser();
+
   const [date, timeWithZ] = lastLogin.split('T');
   const time = timeWithZ.replace('Z', '').slice(0, -3);
 
   // format date to english dd/mm/yyyy
   const [year, month, day] = date.split('-');
   const formattedDate = `${day}-${month}-${year}`;
+  
   // color status map to show who's Active , busy or offline
   const statusColorMap: { [key: string]: string } = {
     active: 'bg-green-500',
@@ -61,20 +65,23 @@ const StaffCardComponent: React.FC<StaffProps> = ({
       <div className="text-xs">{email}</div>
 
       {/* only admin should see */}
-
-      <div className="border-b border-gray-300 p-1"></div>
-      <div className="text-xs py-2">
-        <div className="">
-          <span className="font-bold">Last login</span> : {time} |{' '}
-          {formattedDate}
-        </div>
-        <div className="">
-          <span className="font-bold">Usage</span> : {driveUsage}
-        </div>
-        <div className="">
-          <span className="font-bold">Device</span> : {device}
-        </div>
-      </div>
+      {currentRole === 'admin' && (
+        <>
+          <div className="border-b border-gray-300 p-1"></div>
+          <div className="text-xs py-2">
+            <div className="">
+              <span className="font-bold">Last login</span> : {time} |{' '}
+              {formattedDate}
+            </div>
+            <div className="">
+              <span className="font-bold">Usage</span> : {driveUsage}
+            </div>
+            <div className="">
+              <span className="font-bold">Device</span> : {device}
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };
