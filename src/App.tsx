@@ -6,6 +6,8 @@ import Staff from './pages/Staff';
 import CreateTicket from './pages/CreateTicket';
 import TicketsPage from './pages/TicketsPage';
 import ToDoList from './pages/ToDoList';
+import { Toaster } from 'react-hot-toast';
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
           </Routes>
         </main>
       </div>
+      <Toaster position="top-right" />
     </>
   );
 }
