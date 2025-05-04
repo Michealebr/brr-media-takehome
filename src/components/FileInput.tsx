@@ -21,7 +21,8 @@ const FileInput: React.FC<FileInputProps> = ({ file, setFile }) => {
   };
   return (
     <div className="flex items-center">
-      <label htmlFor="file-upload" className="cursor-pointer p-2 rounded">
+      <label htmlFor="file-upload" className="cursor-pointer p-2 rounded sr-only">
+      upload file
         <img className="w-6" src={FileUploadThin} alt="file upload" />
       </label>
       <input

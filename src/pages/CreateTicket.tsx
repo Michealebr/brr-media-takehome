@@ -19,7 +19,6 @@ const CreateTicket = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     if (!issueType || !message) {
       alert('Please fill in all fields.');
       return;
@@ -40,8 +39,8 @@ const CreateTicket = () => {
     setLoading(true);
 
     setTimeout(() => {
-      setLoading(false);
       alert('Ticket submitted!');
+      setLoading(false);
       setIssueType('');
       setMessage('');
       setFile(null);
@@ -59,20 +58,26 @@ const CreateTicket = () => {
             <img className="" src={Logo} alt="BRR media logo" />
           </div>
           <DropdownComponent
-            name="Issue type dropdown"
+            name="issueType"
             placeholder="-- Select issue -- "
             values={issueTypeData}
             selectedValue={issueType}
             setSelectedValue={setIssueType}
           />
-          <textarea
-            name="message"
-            placeholder="Please describe your issue or request in as much detail as possible."
-            className=" mt-5 w-full  p-2 border rounded border-gray-300 focus:outline-none"
-            required
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
+          <div className="">
+            <label htmlFor="message" className="text-sm font-medium sr-only">
+              Explain the issue
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Please describe your issue or request in as much detail as possible."
+              className=" mt-5 w-full  p-2 border rounded border-gray-300 focus:outline-none"
+              required
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+          </div>
           <FileInput file={file} setFile={setFile} />
           <button
             type="submit"
@@ -81,7 +86,7 @@ const CreateTicket = () => {
             }`}
             disabled={loading}
           >
-            {loading ? 'Submitting...' : 'Submit Request'}
+            {loading ? 'Submitting' : 'Submit Request'}
           </button>
         </form>
       </div>
