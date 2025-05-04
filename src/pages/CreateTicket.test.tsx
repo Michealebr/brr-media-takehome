@@ -3,7 +3,7 @@ import CreateTicket from "./CreateTicket";
 import { describe, it, expect, vi } from "vitest";
 
 describe("CreateTicket", () => {
-  it("shows alert after successful form submission", async () => {
+  it("shows alert after successful ticket submission", async () => {
     const alertMock = vi.spyOn(window, "alert").mockImplementation(() => {});
 
     render(<CreateTicket />);
