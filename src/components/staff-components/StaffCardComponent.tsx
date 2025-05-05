@@ -1,6 +1,6 @@
 import React from 'react';
-import Mo from '../../assets/Mo-pp.png';
 import { useUser } from '../../context/UserContext';
+import ProfilePlaceholder from '../../assets/Profile_photo.png';
 
 interface StaffProps {
   id: number;
@@ -31,7 +31,7 @@ const StaffCardComponent: React.FC<StaffProps> = ({
   // format date to english dd/mm/yyyy
   const [year, month, day] = date.split('-');
   const formattedDate = `${day}-${month}-${year}`;
-  
+
   // color status map to show who's Active , busy or offline
   const statusColorMap: { [key: string]: string } = {
     active: 'bg-green-500',
@@ -48,7 +48,11 @@ const StaffCardComponent: React.FC<StaffProps> = ({
     >
       <div className=" flex pb-2  items-center">
         <div className="w-[60px]">
-          <img className="h-[40px]" src={Mo} alt="staff profile picture" />
+          <img
+            className="h-[40px] rounded-full"
+            src={ProfilePlaceholder}
+            alt="staff profile picture"
+          />
         </div>
         <div className="">
           <p className="text-xs">{name}</p>
