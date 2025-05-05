@@ -27,7 +27,7 @@ const ToDoList = () => {
     if (task.trim()) {
       //gets rid of white space to make sure no empty tasks can be passed
       const newTodo: TodoProps = {
-        id: Date.now(), 
+        id: Date.now(),
         title: task,
         user: email,
         completed: false,

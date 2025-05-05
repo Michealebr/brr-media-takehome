@@ -11,7 +11,7 @@ const FileInput: React.FC<FileInputProps> = ({ file, setFile }) => {
     const selectedFile = e.target.files?.[0];
     // if no selected file exit
     if (!selectedFile) return;
-    
+
     const allowedFileTypes = ['image/png', 'image/jpeg', 'application/pdf'];
     // if selected file doesnt include one of these files exit and alert what we accept
     if (!allowedFileTypes.includes(selectedFile.type)) {

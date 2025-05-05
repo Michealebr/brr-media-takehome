@@ -3,7 +3,7 @@ import React from 'react';
 interface dropdownProps {
   name: string;
   placeholder: string;
-  values: { id: number; value: string; }[];
+  values: { id: number; value: string }[];
   selectedValue: string;
   setSelectedValue: (value: string) => void;
 }

@@ -5,7 +5,7 @@ import TableComponent from '../components/home-components/table-components/Table
 import { useUser } from '../context/UserContext';
 
 const Home = () => {
-    const {role} = useUser();
+  const { role } = useUser();
 
   return (
     <div className="flex flex-col gap-20 ">

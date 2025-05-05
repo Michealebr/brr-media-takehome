@@ -19,21 +19,21 @@ const TicketsPage = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setTicket(ticketData)
-      setLoading(false)
-    }, 1000)
-  },[])
+      setTicket(ticketData);
+      setLoading(false);
+    }, 1000);
+  }, []);
 
   const statuses = ['Backlog', 'Open', 'In Progress', 'Resolved'];
 
-  if(loading){
-    return <Loading />
+  if (loading) {
+    return <Loading />;
   }
 
-  if (!loading && ticket.length === 0){
-    return <Empty message='No tickets found' />
+  if (!loading && ticket.length === 0) {
+    return <Empty message="No tickets found" />;
   }
-  
+
   return (
     <div className="flex max-h-full w-full max-w-[2000px] overflow-x-auto scrollbar-custom ">
       {statuses.map((status) => (

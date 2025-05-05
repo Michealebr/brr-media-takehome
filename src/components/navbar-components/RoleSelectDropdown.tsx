@@ -40,7 +40,6 @@ const RoleSelectDropdown = () => {
           className="rounded cursor-pointer appearance-none text-sm  border border-gray-300 px-4 py-1  rounded focus:outline-none"
           disabled={isLoading}
         >
-            
           <option value="admin">Admin</option>
           <option value="staff">Staff</option>
           <option value="user">User</option>
