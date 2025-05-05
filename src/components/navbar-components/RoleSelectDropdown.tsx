@@ -37,7 +37,7 @@ const RoleSelectDropdown = () => {
         <select
           value={role}
           onChange={handleRoleChange}
-          className="border p-2 rounded cursor-pointer"
+          className="rounded cursor-pointer appearance-none text-sm  border border-gray-300 px-4 py-1  rounded focus:outline-none"
           disabled={isLoading}
         >
             
